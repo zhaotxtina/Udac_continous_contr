@@ -3,20 +3,28 @@
 
 
 ### Project Overview
-For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.
+For this project, you will work with the Reacher environment.
 
-![](images/navigation.gif)
+![](images/reacher.gif)
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana. Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.
+In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
 
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction. Given this information, the agent has to learn how to best select actions. Four discrete actions are available, corresponding to:
+The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
-- 0 - move forward.
-- 1 - move backward.
-- 2 - turn left.
-- 3 - turn right.
+For this project, we will provide you with two separate versions of the Unity environment:
 
-The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
+The first version contains a single agent.
+The second version contains 20 identical agents, each with its own copy of the environment.
+
+Option 1: Solve the First Version
+The task is episodic, and in order to solve the environment, your agent must get an average score of +30 over 100 consecutive episodes.
+
+Option 2: Solve the Second Version
+The barrier for solving the second version of the environment is slightly different, to take into account the presence of many agents. In particular, your agents must get an average score of +30 (over 100 consecutive episodes, and over all agents). Specifically,
+
+After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 20 (potentially different) scores. We then take the average of these 20 scores.
+This yields an average score for each episode (where the average is over all 20 agents).
+The environment is considered solved, when the average (over 100 episodes) of those average scores is at least +30. 
 
 ### Getting Started
 
@@ -38,10 +46,10 @@ Getting Started
 
 The complete steps of results and solutions can be found in the folder. Here is the description of each file:
 
-- Navigation.ipynb file: with fully functional code, all code cells executed and displaying output, and all questions answered. You can also download this via your workspace by clicking download as..
-- model_ori.py, model.py and dgn_agent.py: the dqn pytorch model and agent modules
+- continuous_control.ipynb file: with fully functional code, all code cells executed and displaying output, and all questions answered. You can also download this via your workspace by clicking download as..
+- model.py and ddpg_agent.py: the dqn pytorch model and agent modules
 - README.md markdown file: Description of project and instructions
 - report.html or report.pdf: export of the project report with the name Report.html or Report.pdf.
-- pth_checkpoints folder: Contains several saved model weights of the successful agent, named Test1_checkpoint.pth,
-Test2_checkpoint.pth,Test3_checkpoint.pth and Test4_checkpoint.pth.
+- pth_checkpoints folder: Contains the model weights of the successful agent, named checkpoint_actor.pth,
+checkpoint_critic.pth
 - Images folder: images used for the project agent environment 
