@@ -47,7 +47,7 @@ Getting Started
 The complete steps of results and solutions can be found in the folder. Here is the description of each file:
 
 - continuous_control.ipynb file: The solution for option 1, single agent with fully functional code, all code cells executed and displaying output, and all questions answered. You can also download this via your workspace by clicking download as..
-- model.py and ddpg_agent.py: the dqn pytorch model and agent modules
+- model.py and ddpg_agent.py: the ddpg pytorch model and agent modules
 - README.md markdown file: Description of project and instructions
 - report.html or report.pdf: export of the project report with the name Report.html or Report.pdf.
 - pth_checkpoints folder: Contains the model weights of the successful agent, named checkpoint_actor.pth,
