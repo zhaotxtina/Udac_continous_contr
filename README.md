@@ -22,7 +22,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 Option 2: Solve the Second Version
 The barrier for solving the second version of the environment is slightly different, to take into account the presence of many agents. In particular, your agents must get an average score of +30 (over 100 consecutive episodes, and over all agents). Specifically,
 
-After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 20 (potentially different) scores. We then take the average of these 20 scores.
+_After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 20 (potentially different) scores. We then take the average of these 20 scores.
 This yields an average score for each episode (where the average is over all 20 agents).
 The environment is considered solved, when the average (over 100 episodes) of those average scores is at least +30. 
 
@@ -58,7 +58,7 @@ The complete steps of results and solutions can be found in the folder. Here is 
 - continuous_control.ipynb file: The solution for option 1, single agent with fully functional code, all code cells executed and displaying output, and all questions answered. You can also download this via your workspace by clicking download as..
 - model.py and ddpg_agent.py: the ddpg pytorch model and agent modules
 - README.md markdown file: Description of project and instructions
-- report.html or report.pdf: export of the project report with the name Report.html or Report.pdf.
+- report_proj_conticontr.html or report_proj_conticontr.pdf: export of the project report with the name Report.html or Report.pdf.
 - pth_checkpoints folder: Contains the model weights of the successful agent, named checkpoint_actor.pth,
 checkpoint_critic.pth
 - Images folder: images used for the project agent environment 
