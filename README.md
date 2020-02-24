@@ -59,6 +59,6 @@ The complete steps of results and solutions can be found in the folder. Here is 
 - model.py and ddpg_agent.py: the ddpg pytorch model and agent modules
 - README.md markdown file: Description of project and instructions
 - report_proj_conticontr.html or report_proj_conticontr.pdf: export of the project report with the name Report.html or Report.pdf.
-- pth_checkpoints folder: Contains the model weights of the successful agent, named checkpoint_actor.pth,
+- model weights files: Contains the model weights of the successful agent, named checkpoint_actor.pth,
 checkpoint_critic.pth
 - Images folder: images used for the project agent environment 
